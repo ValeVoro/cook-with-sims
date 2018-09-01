@@ -1,0 +1,72 @@
+<nav id="myNavbar" class="navbar col-lg-8 offset-lg-2 col-12" style="padding-top: 0; border-bottom: 1px solid grey;">
+	  <div class="col-12 " style="">
+		<div class="col-12 col-md-4 headers" style="display: block;height: 200%">
+		  <img class="" src="/assets/Plumbob2.png" style="height:70px;padding:0;padding-bottom: 5%; display: inline;"/>
+		  <h1 class="headers" style="display: block; padding:0;margin-top:0;margin-bottom:0;">The Sims</h1>
+		  <h2 class="headers" style="display: block; padding:0;margin-top:0;">cooking recipes</h2>
+		</div>
+		<div class="col-12 col-md-6 head" style="margin-bottom: 0.5%; margin-right:0; ">
+			<div class="input-group" style="" >
+			  <input type="text" class="form-control" style="background:none; border:none;" placeholder="Search for...">
+			  <span class="input-group-btn">
+				<button class="btn" type="button" style="background:none;">
+					<i class="fa fa-search"></i>
+				</button>
+			  </span>			
+			</div><!-- /input-group -->
+		  </div><!-- /.col-lg-6 -->	  
+	   </div>
+</nav>
+
+<div class="row">	
+
+<h4 class="col-12 breadcrumbs">
+<a href="/home">home</a> &gt;
+<a [attr.href]="product.category">{{product.category}}</a> &gt;
+<a [attr.href]="product.category + '/' + product.id">{{product.name}}</a>
+</h4>
+
+<article class="col-10 ">
+<header class="col-md-6">
+	<img id="intro_photo"  [src]="'/assets/recipes/' + product.id + '.jpg'"  />
+	<h2>{{product.name}}</h2>
+</header>
+<div class="details col-12">{{product.time}} <i class="fas fa-clock"></i>
+	<span *ngFor="let i of getRating(product)">&#9733;</span>
+</div>
+<ul class="ingredients col-12">
+	Ingredients:
+	<li *ngFor="let i of product.ingredients">{{i}}</li>
+
+</ul>
+
+<ul class="directions col-12">
+	Directions:
+	<li>In a large bowl, whisk together oil, honey, soy sauce, and pepper. Before adding chicken, reserve a small amount of marinade to brush onto kabobs while cooking. Place the chicken, garlic, onions and peppers in the bowl, and marinate in the refrigerator at least 2 hours (the longer the better).</li>
+    <li>Preheat the grill for high heat.</li>
+    <li>Drain marinade from the chicken and vegetables, and discard marinade. Thread chicken and vegetables alternately onto the skewers.</li>
+    <li>Lightly oil the grill grate. Place the skewers on the grill. Cook for 12 to 15 minutes, until chicken juices run clear. Turn and brush with reserved marinade frequently.</li>
+</ul>
+
+<div class="rate_me col-12">Rate this recipe:
+<span id="stars">
+	<span>&#9733;</span>
+	<span>&#9733;</span>
+	<span>&#9733;</span>
+	<span>&#9733;</span>
+	<span>&#9733;</span>
+</span>
+</div>
+
+</article>	
+</div>
+	
+	
+<footer class="footer col-8 col-offset-2" style="overflow: hidden;padding-top: 1%;height: 10%;border-top: 1px solid DimGrey;">
+	<p style="display:inline;">The Sims | cooking recipes (c) 2018</p>
+	<span id="volume_on_label" style="float:right;display:none;">on</span>
+	<span id="volume_off_label" style="float:right;">off</span>
+	<span style="float:right;">sound | </span>
+	<span id="volume_on_icon" style="float:right; margin-right:1%; display:none;"><img src="/assets/volume_on.png"/></span>
+	<span id="volume_off_icon" style="float:right; margin-right:1%;"><img src="/assets/volume_off.png"/></span>
+</footer>
