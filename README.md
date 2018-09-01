@@ -1,27 +1,37 @@
-# Cookingapp
+# Cooki with Sims
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+small recipe website based on Angular.
 
-## Code scaffolding
+Tested with Chrome 68.0.3440.106.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Update**: search functionality and rating calculation coming soon.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Architecture 
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[Cook with Sims](https://cook-with-sims.herokuapp.com "visit Cook with Sims now") is a basic Angular app deployed on Heroku.
+The architecture  is pretty simple featuring tree small components:
+![diagram](https://user-images.githubusercontent.com/42339937/44946396-00b49a80-adfc-11e8-8a52-5dca424c9082.png)
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## A small preview
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+Homepage
+![homepage](https://user-images.githubusercontent.com/42339937/44946394-fc887d00-adfb-11e8-9197-52bdb2dcfb3c.png)
+
+View a category
+![category](https://user-images.githubusercontent.com/42339937/44946387-f1cde800-adfb-11e8-95d1-afd2d832eecd.png)
+
+...or single recipes
+![single](https://user-images.githubusercontent.com/42339937/44946397-05794e80-adfc-11e8-87f9-5949ccb87ce1.png)
+
+
+
+
+
