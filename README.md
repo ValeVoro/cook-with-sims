@@ -1,4 +1,4 @@
-# Cooki with Sims
+# Cook with Sims
 
 
 
